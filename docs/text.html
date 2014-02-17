@@ -67,8 +67,10 @@
         <h2><a name="styling">Text styling</a></h2>
         <p>PDFKit has many options for controlling the look of text added to PDF documents, which can be passed to the <code>text</code> method.  They are enumerated below.</p>
         <ul>
+            <li><code>lineBreak</code> <span>- set to <code>false</code> to disable line wrapping all together<span></li>
             <li><code>width</code> <span>- the width that text should be wrapped to (by default, the page width minus the left and right margin)</span></li>
             <li><code>height</code> <span>- the maximum height that text should be clipped to</span></li>
+            <li><code>ellipsis</code> <span>- the character to display at the end of the text when it is too long. Set to <code>true</code> to use the default character.</span></li>
             <li><code>columns</code> <span>- the number of columns to flow the text into</span></li>
             <li><code>columnGap</code> <span>- the amount of space between each column (1/4 inch by default)</span></li>
             <li><code>indent</code> <span>- the amount in PDF points (72 per inch) to indent each paragraph of text</span></li>
@@ -78,6 +80,7 @@
             <li><code>characterSpacing</code> <span>- the amount of space between each character in the text</span></li>
             <li><code>fill</code> <span>- whether to fill the text (<code>true</code> by default)</span></li>
             <li><code>stroke</code> <span>- whether to stroke the text</span></li>
+            <li><code>continued</code> <span>- whether the text segment will be followed immediately by another segment. Useful for changing styling in the middle of a paragraph.</span></li>
         </ul>
         <p>Additionally, the fill and stroke color and opacity methods described in the <a href="vector.html">vector graphics section</a> are 
             applied to text content as well.</p>
